@@ -1,0 +1,443 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Python Revision</title>
+    <link rel="stylesheet" href="{% static 'python/css/output.css' %}">
+</head>
+
+<body>
+    <div>
+        <!-- Navbar -->
+        <nav class="flex justify-between items-center px-6 bg-blue-950">
+
+            <h2 class="text-3xl font-bold text-white py-4">
+                🐍 Python Revision
+            </h2>
+
+            <ul class="flex gap-10 text-xl font-bold text-white py-4">
+
+                <li>
+                    <a href="{% url 'python:home' %}">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'python:chapter' 1 %}">
+                        Chapters
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Practice
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Interview
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <section class="relative h-[90vh] bg-cover bg-center"
+            style='background-image: url("https://i.pinimg.com/1200x/12/d2/75/12d2756bfa28a9abfd127934dc38a938.jpg")'>
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/70"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
+
+                <p class="mb-4 text-lg font-semibold tracking-widest">
+                    🐍 PYTHON COMPLETE REVISION
+                </p>
+
+                <h1 class="mb-6 text-5xl font-bold">
+                    Master Python from Basics to Advanced
+                </h1>
+
+                <p class="mb-8 max-w-2xl text-lg text-gray-200">
+                    A structured collection of Python concepts,
+                    examples, interview questions and coding problems.
+                </p>
+
+                <a href="{% url 'python:chapter' 1 %}" class="rounded-lg bg-blue-600 px-6 py-3 font-semibold transition hover:bg-blue-700">
+                    Start Learning →
+                </a>
+
+                <div class="flex gap-36 text-white font-medium text-2xl">
+                    <h3 class="mt-20">23 Chapters</h3>
+                    <h3 class="mt-20">50+ Questions</h3>
+                    <h3 class="mt-20">80+ Problems</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-b from-blue-100 to-blue-200 py-16">
+
+            <h2 class="text-4xl text-center font-bold text-blue-950">
+                Python Chapters
+            </h2>
+
+            <p class="text-center text-blue-800 mt-3 text-lg">
+                Learn Python step by step from basics to advanced
+            </p>
+
+            <div class="max-w-7xl mx-auto mt-12 px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                {% for chapter in chapters %}
+
+                <div class="group flex flex-col bg-white text-blue-950 rounded-2xl 
+                    border border-blue-100 shadow-md
+                    p-6 min-h-[280px]
+                    transition duration-300 ease-in-out
+                    hover:-translate-y-2 hover:shadow-2xl">
+
+                    <!-- Chapter Number -->
+                    <span class="text-sm font-bold text-blue-600 uppercase tracking-wider">
+                        Chapter {{ chapter.number }}
+                    </span>
+
+                    <!-- Topic -->
+                    <h3 class="mt-3 text-2xl font-bold group-hover:text-blue-700 transition">
+                        {{ chapter.title }}
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="mt-3 text-gray-600 text-base leading-relaxed flex-grow">
+                        {{ chapter.description }}
+                    </p>
+
+                    <!-- Button -->
+                    <div class="mt-6">
+                        <a href="{% url 'python:chapter' chapter.number %}" class="inline-flex items-center gap-2
+                          bg-blue-900 text-white
+                          px-5 py-2.5 rounded-xl
+                          font-semibold
+                          transition duration-300
+                          hover:bg-blue-700
+                          hover:gap-3">
+                            Start Learning
+                            <span>→</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </section>
+
+        <section class="relative h-[90vh] bg-cover bg-center pt-20 pb-10"
+            style='background-image: url("https://i.pinimg.com/1200x/38/20/0c/38200cf0d9fec8c5d375d1785159aa0a.jpg")'>
+
+            <div class="absolute inset-0 bg-black/30"></div>
+
+            <div class="max-w-6xl mx-auto px-6 relative z-10">
+
+                <!-- Heading -->
+                <div class="text-center mb-12">
+                    <p class="text-blue-200 font-semibold uppercase tracking-widest text-sm">
+                        What You'll Learn
+                    </p>
+
+                    <h2 class="text-4xl font-bold text-blue-50 mt-2">
+                        Everything You Need to Master Python
+                    </h2>
+
+                    <p class="text-gray-100 mt-4 max-w-2xl mx-auto">
+                        Build a strong foundation in Python with concepts,
+                        practical examples, interview questions and coding practice.
+                    </p>
+                </div>
+
+
+                <!-- Learning Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- Card 1 -->
+                    <div class="group p-7 rounded-2xl bg-blue-50 border border-blue-100
+                        text-center transition duration-300
+                        hover:-translate-y-2 hover:shadow-xl">
+
+                        <div class="mx-auto w-14 h-14 flex items-center justify-center
+                            rounded-xl bg-blue-600 text-white text-2xl
+                            group-hover:scale-110 transition">
+                            🐍
+                        </div>
+
+                        <h3 class="text-xl font-bold text-blue-950 mt-5">
+                            Python Concepts
+                        </h3>
+
+                        <p class="text-gray-600 mt-3 leading-relaxed">
+                            Learn Python from basic syntax to advanced concepts
+                            with clear explanations.
+                        </p>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="group p-7 rounded-2xl bg-blue-50 border border-blue-100
+                        text-center transition duration-300
+                        hover:-translate-y-2 hover:shadow-xl">
+
+                        <div class="mx-auto w-14 h-14 flex items-center justify-center
+                            rounded-xl bg-blue-600 text-white text-2xl
+                            group-hover:scale-110 transition">
+                            💻
+                        </div>
+
+                        <h3 class="text-xl font-bold text-blue-950 mt-5">
+                            Coding Practice
+                        </h3>
+
+                        <p class="text-gray-600 mt-3 leading-relaxed">
+                            Practice Python problems and improve your
+                            problem-solving skills.
+                        </p>
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="group p-7 rounded-2xl bg-blue-50 border border-blue-100
+                        text-center transition duration-300
+                        hover:-translate-y-2 hover:shadow-xl">
+
+                        <div class="mx-auto w-14 h-14 flex items-center justify-center
+                            rounded-xl bg-blue-600 text-white text-2xl
+                            group-hover:scale-110 transition">
+                            🎯
+                        </div>
+
+                        <h3 class="text-xl font-bold text-blue-950 mt-5">
+                            Interview Questions
+                        </h3>
+
+                        <p class="text-gray-600 mt-3 leading-relaxed">
+                            Revise commonly asked Python interview questions
+                            with detailed answers.
+                        </p>
+                    </div>
+
+
+                    <!-- Card 4 -->
+                    <div class="group p-7 rounded-2xl bg-blue-50 border border-blue-100
+                        text-center transition duration-300
+                        hover:-translate-y-2 hover:shadow-xl">
+
+                        <div class="mx-auto w-14 h-14 flex items-center justify-center
+                            rounded-xl bg-blue-600 text-white text-2xl
+                            group-hover:scale-110 transition">
+                            🚀
+                        </div>
+
+                        <h3 class="text-xl font-bold text-blue-950 mt-5">
+                            Python + Django
+                        </h3>
+
+                        <p class="text-gray-600 mt-3 leading-relaxed">
+                            Connect your Python knowledge with real-world
+                            Django development.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="bg-blue-100 py-20">
+
+            <div class="max-w-6xl mx-auto px-6">
+
+                <div class="rounded-3xl bg-blue-900 px-8 py-12 md:px-14
+                    flex flex-col md:flex-row
+                    items-center justify-between gap-10">
+
+                    <!-- Content -->
+                    <div class="text-center md:text-left max-w-2xl">
+
+                        <span class="inline-block px-4 py-1.5 rounded-full
+                             bg-blue-800 text-blue-200
+                             text-sm font-semibold mb-5">
+                            🎯 Interview Preparation
+                        </span>
+
+                        <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+                            Get Ready for Your
+                            <span class="text-blue-300">Python Interview</span>
+                        </h2>
+
+                        <p class="text-blue-100 text-lg mt-5 leading-relaxed">
+                            Revise important Python concepts, practice commonly asked
+                            interview questions, and solve coding problems to build
+                            your confidence for technical interviews.
+                        </p>
+
+                        <!-- Button -->
+                        <div class="mt-8">
+                            <a href="#practice" class="inline-flex items-center gap-2
+                              bg-white text-blue-950
+                              px-6 py-3 rounded-xl
+                              font-bold
+                              transition duration-300
+                              hover:bg-blue-100
+                              hover:gap-3">
+                                Start Preparing
+                                <span>→</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Right Side -->
+                    <div class="flex-shrink-0">
+
+                        <div class="w-52 h-52 md:w-64 md:h-64
+                            rounded-full
+                            bg-blue-800
+                            flex items-center justify-center
+                            border-8 border-blue-700">
+
+                            <div class="text-center text-white">
+                                <div class="text-6xl">
+                                    🎯
+                                </div>
+
+                                <p class="mt-4 font-bold text-lg">
+                                    Learn
+                                </p>
+
+                                <p class="text-blue-300 font-bold">
+                                    Practice
+                                </p>
+
+                                <p class="text-blue-200 font-bold">
+                                    Succeed
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="bg-blue-950 text-white">
+
+            <div class="max-w-7xl mx-auto px-6 py-14">
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                    <!-- Brand -->
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="text-3xl">🐍</span>
+                            <h2 class="text-2xl font-bold">
+                                Python Revision
+                            </h2>
+                        </div>
+
+                        <p class="mt-4 text-blue-200 leading-relaxed max-w-sm">
+                            A complete Python revision platform to learn concepts,
+                            practice coding, and prepare for technical interviews.
+                        </p>
+                    </div>
+
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-lg font-bold mb-5">
+                            Quick Links
+                        </h3>
+
+                        <ul class="space-y-3 text-blue-200">
+
+                            <li>
+                                <a href="{% url 'python:home' %}" class="hover:text-white transition">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#chapters" class="hover:text-white transition">
+                                    Chapters
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#interview" class="hover:text-white transition">
+                                    Interview Preparation
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#practice" class="hover:text-white transition">
+                                    Coding Practice
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <!-- Topics -->
+                    <div>
+                        <h3 class="text-lg font-bold mb-5">
+                            Learn Python
+                        </h3>
+
+                        <ul class="space-y-3 text-blue-200">
+
+                            <li>Python Basics</li>
+                            <li>Data Structures</li>
+                            <li>Functions & OOP</li>
+                            <li>Exception Handling</li>
+                            <li>Advanced Python</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <!-- Divider -->
+                <div class="border-t border-blue-800 mt-12 pt-6
+                    flex flex-col md:flex-row
+                    items-center justify-between gap-4">
+
+                    <p class="text-blue-300 text-sm">
+                        © 2026 Python Complete Revision. All rights reserved.
+                    </p>
+
+                    <p class="text-blue-300 text-sm">
+                        Built with 🐍 Python & Django
+                    </p>
+
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

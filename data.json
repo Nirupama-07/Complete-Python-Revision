@@ -1,0 +1,1394 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$P15h8QaWLgkuGldJpjT8d3$FwmvCyve2JKfsIaPkrtaI/NFXPcrww2MfMYoiBntqro=",
+    "last_login": "2026-08-11T12:24:54.113Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-08-11T12:24:28.228Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "7en52u09isj8qsrx9htiplwtarcxy4jw",
+  "fields": {
+    "session_data": ".eJxVjLsOwjAMAP_FM4qSGPLoyM43VLaTkgJKpKadEP-OKnWA9e50bxhpW8u49byMc4IBDJx-GZM8c91FelC9NyWtrsvMak_UYbu6tZRf16P9GxTqBQYgQ-hxyg6tZHuZArqoDVr0JN6g9TGEpP2Z2Gkx0SFHHwVRgnAyjuHzBcAmNxI:1wtlXK:2SKOrG5GiJjSjhlTCWSgMDqEYr-0tvuGINO_Nks7xcA",
+    "expire_date": "2026-08-25T12:24:54.121Z"
+  }
+},
+{
+  "model": "python.chapters",
+  "pk": 1,
+  "fields": {
+    "number": 1,
+    "title": "Python Basics",
+    "description": "Learn the basics of python"
+  }
+},
+{
+  "model": "python.chapters",
+  "pk": 2,
+  "fields": {
+    "number": 2,
+    "title": "Variables and Data Types",
+    "description": "Understand datatypes"
+  }
+},
+{
+  "model": "python.chapters",
+  "pk": 3,
+  "fields": {
+    "number": 3,
+    "title": "Operators",
+    "description": "Master python operators"
+  }
+},
+{
+  "model": "python.chapters",
+  "pk": 4,
+  "fields": {
+    "number": 4,
+    "title": "Control Flow",
+    "description": "if/elif/else"
+  }
+},
+{
+  "model": "python.chapters",
+  "pk": 5,
+  "fields": {
+    "number": 5,
+    "title": "Loops",
+    "description": "For/While"
+  }
+},
+{
+  "model": "python.chapters",
+  "pk": 6,
+  "fields": {
+    "number": 6,
+    "title": "String",
+    "description": "String Methods"
+  }
+},
+{
+  "model": "python.topics",
+  "pk": 1,
+  "fields": {
+    "chapter": 1,
+    "title": "1. What is Python?",
+    "category": "Easy",
+    "content": "Python is a popular high-level ,interpreted programming language used to build websites, software, games, AI applications, automation scripts and more.\r\n\r\nIt supports multiple programming paradigms including procedural, object-oriented and functional programming.\r\n\r\nIt is known for its versatility and readability.",
+    "example_code": "",
+    "order": 1
+  }
+},
+{
+  "model": "python.topics",
+  "pk": 2,
+  "fields": {
+    "chapter": 1,
+    "title": "2. How is python interpreted?",
+    "category": "Easy",
+    "content": "Python code is executed line by line by the python interpreter, making it an interpreted language. This means that python does not need to be compiled before execution. That is why it is also known as dynamically typed language.",
+    "example_code": "",
+    "order": 2
+  }
+},
+{
+  "model": "python.topics",
+  "pk": 3,
+  "fields": {
+    "chapter": 1,
+    "title": "3.What are python's key features?",
+    "category": "Easy",
+    "content": "Some of the python's key features are:\r\n• Easy to read and write\r\n• Interpreted language\r\n• Dynamically typed\r\n• Supports multiple programming paradigm\r\n• Object-oriented\r\n• Open source\r\n• Extensive standard library",
+    "example_code": "",
+    "order": 3
+  }
+},
+{
+  "model": "python.topics",
+  "pk": 4,
+  "fields": {
+    "chapter": 1,
+    "title": "4.What is PEP 8?",
+    "category": "Medium",
+    "content": "PEP 8 is Python Enhancement Proposal that provides guidelines and best practices on how to write python code. It helps to maintain readability and consistency of python code.",
+    "example_code": "",
+    "order": 4
+  }
+},
+{
+  "model": "python.topics",
+  "pk": 5,
+  "fields": {
+    "chapter": 1,
+    "title": "5. What does it means that python is object oriented?",
+    "category": "Medium",
+    "content": "Python is object oriented programming language because it allows python code to be organized using classes and objects.\r\n\r\nObjects combines data(attributes) and behaviour(methods) making code more reusable, modular and easy to maintain.\r\n\r\nAdditionally almost everything in python such as string, lists, integer, functions and classes is object in itself.",
+    "example_code": "",
+    "order": 5
+  }
+},
+{
+  "model": "python.topics",
+  "pk": 6,
+  "fields": {
+    "chapter": 1,
+    "title": "6. What is a scope in python?",
+    "category": "Medium",
+    "content": "A scope is a block of code where an object of python remains relevant. These are the following scope in python:\r\n\r\n•Local Scope: It refers to the local objects available in the current location.\r\n\r\n•Global Scope: It refers to the objects available throughout the code execution since their inceptions.\r\n\r\n•Enclosing scope: A variable in an outer function is available to an inner function.\r\n\r\n•Built-in scope: It contains python built-in names like: len( ), print( ) etc.",
+    "example_code": "Example of:\r\n•Local Scope:\r\ndef my_function():\r\n    x = 10\r\n    print(x)\r\nmy_function()\r\n\r\n•Global Scope:\r\nx = 100\r\ndef my_function():\r\n    print(x)\r\nmy_function()\r\n\r\n•Enclosing Scope:\r\ndef outer():\r\n    x = 20\r\n    def inner():\r\n        print(x)\r\n    inner()\r\nouter()\r\n\r\n•Built-in Scope:\r\nprint()\r\nlen()\r\nsum()",
+    "order": 6
+  }
+},
+{
+  "model": "python.topics",
+  "pk": 7,
+  "fields": {
+    "chapter": 1,
+    "title": "7. What is the difference between modules and packages?",
+    "category": "Medium",
+    "content": "A module is a single Python file containing functions, classes, or variables, whereas a package is a directory used to organize and group multiple related Python modules.\r\n\r\nReal-life example:\r\nPackage = Book\r\n   │\r\n   ├── Chapter 1 = Module\r\n   ├── Chapter 2 = Module\r\n   └── Chapter 3 = Module",
+    "example_code": "e.g.\r\nmy_package/\r\n│\r\n├── __init__.py\r\n├── math_utils.py\r\n├── string_utils.py\r\n└── file_utils.py",
+    "order": 7
+  }
+},
+{
+  "model": "python.topics",
+  "pk": 8,
+  "fields": {
+    "chapter": 1,
+    "title": "8. What is PIP?",
+    "category": "Medium",
+    "content": "PIP is Python's Package Manager used to install, update, uninstall and manage third party python packages from package repositories such as Python Package Index(PyPI).",
+    "example_code": "",
+    "order": 8
+  }
+},
+{
+  "model": "python.topics",
+  "pk": 9,
+  "fields": {
+    "chapter": 1,
+    "title": "9. What is a keyword in python?",
+    "category": "Easy",
+    "content": "A keyword is a reserved word in python that has a pre-defined meaning. Keyword cannot be used as a function name or class name or variable name because python already uses them for specific purposes. The number of  keyword in python are 35.",
+    "example_code": "e.g. len, print, sum, avg",
+    "order": 9
+  }
+},
+{
+  "model": "python.topics",
+  "pk": 10,
+  "fields": {
+    "chapter": 1,
+    "title": "10. What are Python decorators?",
+    "category": "Hard",
+    "content": "A decorator is a function that adds or modifies the behavior of another function(or class) without changing its original code.\r\n\r\nThink of decorator like gift wrapping. Gift is function or class and wrapping is decorator.\r\n\r\nThey usually defined with @decorator_name syntax.",
+    "example_code": "e.g. is_admin( ), is_authenticated( )",
+    "order": 10
+  }
+},
+{
+  "model": "python.topics",
+  "pk": 11,
+  "fields": {
+    "chapter": 1,
+    "title": "11. How does python handle memory management?",
+    "category": "Hard",
+    "content": "Python handle memory automatically by using reference counting and garbage collection. Objects are stored in the python heap. When an object's reference count becomes zero it can be deallocated immediately. A garbage collector also detects and removes the unreachable objects involved in circular references.",
+    "example_code": "",
+    "order": 11
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 1,
+  "fields": {
+    "chapter": 1,
+    "title": "1. What is Python? What are its main features?"
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 2,
+  "fields": {
+    "chapter": 1,
+    "title": "2. Why is Python called a dynamically typed language?"
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 3,
+  "fields": {
+    "chapter": 1,
+    "title": "3. What are the advantages and disadvantages of Python?"
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 4,
+  "fields": {
+    "chapter": 1,
+    "title": "4. What is PEP 8?"
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 5,
+  "fields": {
+    "chapter": 1,
+    "title": "5. What is the difference between a syntax error and a runtime error?"
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 6,
+  "fields": {
+    "chapter": 1,
+    "title": "6. What are comments and docstrings in Python?"
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 7,
+  "fields": {
+    "chapter": 1,
+    "title": "7. What are the different types of scope in Python?"
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 8,
+  "fields": {
+    "chapter": 1,
+    "title": "8. What is the LEGB rule in Python?"
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 9,
+  "fields": {
+    "chapter": 1,
+    "title": "9. What is the difference between local and global variables?"
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 10,
+  "fields": {
+    "chapter": 1,
+    "title": "10. How do you create your own Python module?"
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 11,
+  "fields": {
+    "chapter": 1,
+    "title": "11. What is the difference between import module and from module import function?"
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 12,
+  "fields": {
+    "chapter": 1,
+    "title": "12. What is the purpose of __init__.py?"
+  }
+},
+{
+  "model": "python.interview",
+  "pk": 13,
+  "fields": {
+    "chapter": 1,
+    "title": "13. What is the difference between a regular package and a namespace package?"
+  }
+},
+{
+  "model": "python.codingquestion",
+  "pk": 1,
+  "fields": {
+    "chapter": 1,
+    "title": "1. What will be the output of the following?",
+    "description": "Predict the output of the following Python code.\r\n\r\nPay attention to the scope of the variable x inside and outside the function.",
+    "starter_code": "x = 10\r\n\r\ndef test():\r\n    x = 20\r\n    print(x)\r\n\r\ntest()\r\nprint(x)",
+    "expected_output": "20\r\n10"
+  }
+},
+{
+  "model": "python.codingquestion",
+  "pk": 2,
+  "fields": {
+    "chapter": 1,
+    "title": "2. What will be the output of the following Python code?",
+    "description": "Predict the output of the following code.",
+    "starter_code": "x = 10\r\n\r\ndef test():\r\n    global x\r\n    x = 20\r\n\r\ntest()\r\nprint(x)",
+    "expected_output": "20"
+  }
+},
+{
+  "model": "python.codingquestion",
+  "pk": 3,
+  "fields": {
+    "chapter": 1,
+    "title": "3. What will be the output of the following code?",
+    "description": "Predict the output of the following Python code.\r\n\r\nPay attention to the scope of the variable x inside and outside the function.",
+    "starter_code": "x = 10\r\n\r\ndef outer():\r\n    y = 20\r\n\r\n    def inner():\r\n        z = 30\r\n        print(x, y, z)\r\n\r\n    inner()\r\n\r\nouter()",
+    "expected_output": "10 20 30"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-08-11T12:25:34.494Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "chapters"
+    ],
+    "object_id": "1",
+    "object_repr": "Python Basics",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-08-11T12:26:03.283Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "chapters"
+    ],
+    "object_id": "2",
+    "object_repr": "Variables and Data Types",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-08-11T12:26:22.378Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "chapters"
+    ],
+    "object_id": "3",
+    "object_repr": "Operators",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-08-11T12:26:46.127Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "chapters"
+    ],
+    "object_id": "4",
+    "object_repr": "Control Flow",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-08-11T12:27:00.040Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "chapters"
+    ],
+    "object_id": "5",
+    "object_repr": "Loops",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-08-11T12:27:17.424Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "chapters"
+    ],
+    "object_id": "6",
+    "object_repr": "String",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-08-11T14:09:00.800Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "1",
+    "object_repr": "What is Python?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-08-11T14:21:48.927Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "1",
+    "object_repr": "1. What is Python?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-08-11T14:24:16.010Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "2",
+    "object_repr": "2. How is python interpreter?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-08-11T14:25:28.684Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "2",
+    "object_repr": "2. How is python interpreted?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-08-11T14:27:53.744Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "3",
+    "object_repr": "What are python's key features?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-08-11T14:29:47.624Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "4",
+    "object_repr": "4.What is PEP 8?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-08-11T14:32:39.460Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "3",
+    "object_repr": "3.What are python's key features?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-08-11T14:37:19.974Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "5",
+    "object_repr": "5. What does it means that python is object oriented?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-08-11T14:44:30.601Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "6",
+    "object_repr": "6. What is a scope in python?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-08-11T14:50:27.285Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "6",
+    "object_repr": "6. What is a scope in python?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-08-11T14:55:48.824Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "6",
+    "object_repr": "6. What is a scope in python?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Content\", \"Example code\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-08-11T14:59:29.763Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "7",
+    "object_repr": "7. What is the difference between modules and packages?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-08-11T15:01:55.984Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "8",
+    "object_repr": "8. What is PIP?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-08-11T15:05:08.274Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "9",
+    "object_repr": "9. What is a keyword in python?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-08-11T15:09:49.266Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "10",
+    "object_repr": "10. What are Python decorators?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-08-11T15:12:53.025Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "11",
+    "object_repr": "11. How does python handle memory management?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-08-11T15:19:52.306Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "1",
+    "object_repr": "1. What is Python?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-08-11T15:20:01.610Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "2",
+    "object_repr": "2. How is python interpreted?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-08-11T15:20:12.070Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "2",
+    "object_repr": "2. How is python interpreted?",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-08-11T15:20:20.297Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "3",
+    "object_repr": "3.What are python's key features?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-08-11T15:21:39.315Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "4",
+    "object_repr": "4.What is PEP 8?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-08-11T15:21:51.003Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "5",
+    "object_repr": "5. What does it means that python is object oriented?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-08-11T15:21:59.401Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "6",
+    "object_repr": "6. What is a scope in python?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-08-11T15:22:07.195Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "7",
+    "object_repr": "7. What is the difference between modules and packages?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-08-11T15:22:15.642Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "8",
+    "object_repr": "8. What is PIP?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2026-08-11T15:22:22.656Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "9",
+    "object_repr": "9. What is a keyword in python?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2026-08-11T15:22:31.759Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "10",
+    "object_repr": "10. What are Python decorators?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2026-08-11T15:22:37.922Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "topics"
+    ],
+    "object_id": "11",
+    "object_repr": "11. How does python handle memory management?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2026-08-11T15:32:39.931Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "1",
+    "object_repr": "1. What is Python? What are its main features?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2026-08-11T15:35:12.529Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "2",
+    "object_repr": "2. Why is Python called a dynamically typed language?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2026-08-11T15:35:28.089Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "3",
+    "object_repr": "3. What are the advantages and disadvantages of Python?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2026-08-11T15:35:45.007Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "4",
+    "object_repr": "4. What is PEP 8?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2026-08-11T15:36:05.292Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "5",
+    "object_repr": "5. What is the difference between a syntax error and a runtime error?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2026-08-11T15:36:21.325Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "6",
+    "object_repr": "6. What are comments and docstrings in Python?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2026-08-11T15:36:46.613Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "7",
+    "object_repr": "8.What are the different types of scope in Python?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2026-08-11T15:37:01.648Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "8",
+    "object_repr": "9. What is the LEGB rule in Python?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2026-08-11T15:37:22.091Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "9",
+    "object_repr": "11. What is the difference between local and global variables?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2026-08-11T15:37:37.674Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "10",
+    "object_repr": "12. How do you create your own Python module?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2026-08-11T15:37:54.449Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "11",
+    "object_repr": "13. What is the difference between import module and from module import function?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2026-08-11T15:38:15.238Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "12",
+    "object_repr": "14. What is the purpose of __init__.py?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2026-08-11T15:38:33.187Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "13",
+    "object_repr": "15. What is the difference between a regular package and a namespace package?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2026-08-11T15:38:47.041Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "7",
+    "object_repr": "7. What are the different types of scope in Python?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2026-08-11T15:38:52.945Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "8",
+    "object_repr": "8. What is the LEGB rule in Python?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2026-08-11T15:39:00.812Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "9",
+    "object_repr": "9. What is the difference between local and global variables?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2026-08-11T15:39:07.186Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "10",
+    "object_repr": "10. How do you create your own Python module?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2026-08-11T15:39:12.367Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "11",
+    "object_repr": "11. What is the difference between import module and from module import function?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2026-08-11T15:39:17.366Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "12",
+    "object_repr": "12. What is the purpose of __init__.py?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2026-08-11T15:39:22.745Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "interview"
+    ],
+    "object_id": "13",
+    "object_repr": "13. What is the difference between a regular package and a namespace package?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2026-08-11T15:54:06.242Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "codingquestion"
+    ],
+    "object_id": "1",
+    "object_repr": "What will be the output of the following?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2026-08-11T15:55:48.640Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "codingquestion"
+    ],
+    "object_id": "1",
+    "object_repr": "1. What will be the output of the following?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2026-08-11T15:58:04.319Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "codingquestion"
+    ],
+    "object_id": "2",
+    "object_repr": "2. What will be the output of the following Python code?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2026-08-11T15:59:00.845Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "python",
+      "codingquestion"
+    ],
+    "object_id": "3",
+    "object_repr": "3. What will be the output of the following code?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
